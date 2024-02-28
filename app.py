@@ -34,6 +34,10 @@ JOBS = [
 def index():
     return render_template('home.html', jobs=JOBS, company_name='Nando')
 
+@app.route('/jobs', strict_slashes=False)
+def list_jobs():
+    return jsonify(JOBS)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
