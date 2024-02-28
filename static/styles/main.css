@@ -3,3 +3,13 @@
     height: 360px;
     object-fit: cover;
 }
+
+h4 {
+    color: rgb(80, 80, 80) !important;
+    margin-bottom: 4px !important;
+}
+
+.jobs_info {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+}
