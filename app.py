@@ -12,9 +12,9 @@ JOBS = [
     },
     {
         'id': 2,
-        'title': 'Front End Developer',
+        'title': 'Data Scientist',
         'location': 'Harare, Zimbabwe',
-        'salary': '$1000',
+        'salary': '$2000',
     },
     {
         'id': 3,
@@ -24,15 +24,16 @@ JOBS = [
     },
     {
         'id': 4,
-        'title': 'Data Scientist',
+        'title': 'Front End Developer',
         'location': 'Mutare, Zimbabwe',
-        'salary': '$2000',
+        'salary': '$1000',
     }
 ]
 
 @app.route('/')
 def index():
     return render_template('home.html', jobs=JOBS, company_name='Nando')
+
 
 @app.route('/jobs', strict_slashes=False)
 def list_jobs():
